@@ -68,7 +68,7 @@ from FallenMusic.Helpers.thumbnails import gen_qthumb, gen_thumb
 async def play(_, message: Message):
     fallen = await message.reply_text("» اصبر هشغل اهو ❤️ ")
     try:
-        
+        await message.delete()
     except:
         pass
 
