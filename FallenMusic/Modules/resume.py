@@ -31,7 +31,6 @@ from FallenMusic.Helpers import admin_check, close_key, is_streaming, stream_on
 @admin_check
 async def res_str(_, message: Message):
     try:
-        await message.delete()
     except:
         pass
 
