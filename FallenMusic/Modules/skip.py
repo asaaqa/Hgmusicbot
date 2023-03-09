@@ -32,7 +32,6 @@ from FallenMusic.Helpers import _clear_, admin_check, buttons, close_key, gen_th
 @admin_check
 async def skip_str(_, message: Message):
     try:
-        await message.delete()
     except:
         pass
     get = fallendb.get(message.chat.id)
