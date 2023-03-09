@@ -31,6 +31,7 @@ from FallenMusic.Helpers import _clear_, admin_check, close_key
 @admin_check
 async def stop_str(_, message: Message):
     try:
+        await message.delete()
     except:
         pass
     try:
