@@ -60,13 +60,13 @@ from FallenMusic.Helpers.thumbnails import gen_qthumb, gen_thumb
 
 
 @app.on_message(
-    filters.command(["play", "vplay", "p"])
+    filters.command(["play", "vplay", "p", "ديشا", "اكس", "مزيكا", "لولا"])
     & filters.group
     & ~filters.forwarded
     & ~filters.via_bot
 )
 async def play(_, message: Message):
-    fallen = await message.reply_text("» ᴘʀᴏᴄᴇssɪɴɢ, ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...")
+    fallen = await message.reply_text("» اصبر هشغل اهو ❤️ ")
     try:
         await message.delete()
     except:
@@ -178,7 +178,7 @@ async def play(_, message: Message):
         file_path = audio_dl(url)
     else:
         if len(message.command) < 2:
-            return await fallen.edit_text("» ᴡʜᴀᴛ ᴅᴏ ʏᴏᴜ ᴡᴀɴɴᴀ ᴘʟᴀʏ ʙᴀʙʏ ?")
+            return await fallen.edit_text("» جاري البحث ياعم ❤️  ?")
         await fallen.edit_text("🔎")
         query = message.text.split(None, 1)[1]
         try:
