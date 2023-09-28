@@ -60,7 +60,7 @@ from FallenMusic.Helpers.thumbnails import gen_qthumb, gen_thumb
 
 
 @app.on_message(
-    @app.on_message(filters.command(["vplay", "play"]) | filters.command(["شغل","تشغيل","سهى شغل"],prefixes= ["/", "!","","#"]) & filters.group)
+    @app.on_message(filters.command(["vplay", "play"]) | filters.command(["شغل","تشغيل"],prefixes= ["/", "!",""]) & filters.group)
     & filters.group
     & ~filters.forwarded
     & ~filters.via_bot
