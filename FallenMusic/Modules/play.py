@@ -60,7 +60,7 @@ from FallenMusic.Helpers.thumbnails import gen_qthumb, gen_thumb
 
 
 @app.on_message(
-    filters.command(["play", "vplay", "p", "ديشا", "اكس", "مزيكا", "لولا"])
+    @app.on_message(filters.command(["vplay", "play"]) | filters.command(["شغل","تشغيل","سهى شغل"],prefixes= ["/", "!","","#"]) & filters.group)
     & filters.group
     & ~filters.forwarded
     & ~filters.via_bot
@@ -251,7 +251,7 @@ async def play(_, message: Message):
         await add_active_chat(message.chat.id)
         await message.reply_photo(
             photo=imgt,
-            caption=f"**➻ تم التشغيل يرحي**\n\n‣ **ᴛɪᴛʟᴇ :** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n‣ **ᴅᴜʀᴀᴛɪᴏɴ :** `{duration}` ᴍɪɴᴜᴛᴇs\n‣ **ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ :** {ruser}",
+            caption=f"**➻ تم التشغيل يروحي**\n\n‣ **عنوان :** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n‣ **المدة :** `{duration}` دقيقه\n‣ **بواسطة :** {ruser}",
             reply_markup=buttons,
         )
 
