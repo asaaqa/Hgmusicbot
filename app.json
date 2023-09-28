@@ -45,13 +45,12 @@
         "description": "Link of your telegram support group. (Must pe public)",
         "value": "",
         "required": false
-      }
-    },
+     },
     "UPSTREAM_REPO": {
       "description": "رمز السورس لا تغيره ابدا",
       "value": "https://github.com/asaaqa/Hgmusicbot",
       "required": false
-      }  
+      }
     }, 
     "buildpacks": [
           {
