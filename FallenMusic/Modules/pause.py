@@ -27,7 +27,8 @@ from FallenMusic import app, pytgcalls
 from FallenMusic.Helpers import admin_check, close_key, is_streaming, stream_off
 
 
-@app.on_message(filters.command(["سكته", "اصه"]) | filters.command(["اسكت","توقف","اصمت"],prefixes= ["/", "!","","#"]) & filters.group)
+@app.on_message(
+    filters.command(["سكته", "اصه"]) | filters.command(["اسكت","توقف","اصمت"],prefixes= ["/", "!","","#"]) & filters.group)
 @admin_check
 async def pause_str(_, message: Message):
     try:
