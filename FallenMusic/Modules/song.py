@@ -91,7 +91,7 @@ async def song(_, message: Message):
             )
             if message.chat.type != ChatType.PRIVATE:
                 await message.reply_text(
-                    "يرجى التحقق من أن المسؤول قد أرسل الأغنية المطلوبة."
+                    " ** تم تحميل الأغنية**\n **لقد تم ارسال الأغنية التي تبحث عنها اليك بالخاص **."
                 )
         except:
             start_butt = InlineKeyboardMarkup(
