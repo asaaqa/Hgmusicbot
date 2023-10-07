@@ -18,7 +18,7 @@
 # AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-# SOFTWARE.
+# asaaq altweel.
 
 import asyncio
 import os
@@ -67,7 +67,7 @@ from FallenMusic.Helpers.thumbnails import gen_qthumb, gen_thumb
     & ~filters.via_bot
 )
 async def play(_, message: Message):
-    fallen = await message.reply_text("» اصبر هشغل اهو ❤️ ")
+    fallen = await message.reply_text("»** اصبر هشغل ألان ❤️** ")
     try:
         await message.delete()
     except:
@@ -179,7 +179,7 @@ async def play(_, message: Message):
         file_path = audio_dl(url)
     else:
         if len(message.command) < 2:
-            return await fallen.edit_text("» جاري البحث ياعم ❤️  ?")
+            return await fallen.edit_text("»**جاري البحث يا غالي ❤️**  ?")
         await fallen.edit_text("🔎")
         query = message.text.split(None, 1)[1]
         try:
@@ -222,7 +222,7 @@ async def play(_, message: Message):
         qimg = await gen_qthumb(videoid, message.from_user.id)
         await message.reply_photo(
             photo=qimg,
-            caption=f"**➻ ᴀᴅᴅᴇᴅ ᴛᴏ ᴏ̨ᴜᴇᴜᴇ ᴀᴛ {position}**\n\n‣ **ᴛɪᴛʟᴇ :** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n‣ **ᴅᴜʀᴀᴛɪᴏɴ :** `{duration}` ᴍɪɴᴜᴛᴇs\n‣ **ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ :** {ruser}",
+            caption=f"**➻ تم التشغيل يا روحي {position}**\n\n‣ **بعنوان :** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n‣ **المدة :** `{duration}` دقيقة\n‣ **بواسطة :** {ruser}",
             reply_markup=buttons,
         )
     else:
@@ -252,7 +252,7 @@ async def play(_, message: Message):
         await add_active_chat(message.chat.id)
         await message.reply_photo(
             photo=imgt,
-            caption=f"**➻ تم التشغيل يروحي**\n\n‣ **عنوان :** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n‣ **المدة :** `{duration}` دقيقه\n‣ **بواسطة :** {ruser}",
+            caption=f"**➻ تم التشغيل يروحي**\n‣ **عنوان :** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n‣ **المدة :** `{duration}` دقيقه\n‣ **بواسطة :** {ruser}",
             reply_markup=buttons,
         )
 
