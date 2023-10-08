@@ -27,14 +27,14 @@ from FallenMusic import BOT_USERNAME
 
 
 close_key = InlineKeyboardMarkup(
-    [[InlineKeyboardButton(text="✯ ᴄʟᴏsᴇ ✯", callback_data="close")]]
+    [[InlineKeyboardButton(text="✯ اغلاق ✯", callback_data="close")]]
 )
 
 
 buttons = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton("✯ ▁▄▂▇▄▅▄▅▃ ✯", url="https://t.me/ASAKIOP"), 
+            InlineKeyboardButton("✯  ▁▄▂▇▄▅▄▅▃  ✯", url="https://t.me/ASAKIOP"), 
         ],
         [
             InlineKeyboardButton(text="▷", callback_data="resume_cb"),
@@ -43,8 +43,10 @@ buttons = InlineKeyboardMarkup(
             InlineKeyboardButton(text="▢", callback_data="end_cb"),
         ],
         [
-            InlineKeyboardButton("✯السورس✯", url=f"https://t.me/Mlze1bot"),
-            InlineKeyboardButton(text="✯إغلاق✯", callback_data="close"), 
+            InlineKeyboardButton(text="✯  إغلاق  ✯", callback_data="close"), 
+       ],
+       [
+           InlineKeyboardButton("✯  السورس  ✯", url=f"https://t.me/Mlze1bot"),
        ],
    ] 
 )
@@ -74,19 +76,19 @@ pm_buttons = [
 gp_buttons = [
     [
         InlineKeyboardButton(
-            text="ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
+            text="أضفنى الى جروبك",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         )
     ],
     [
-        InlineKeyboardButton(text="❄ ᴄʜᴀɴɴᴇʟ ❄", url=config.SUPPORT_CHANNEL),
-        InlineKeyboardButton(text="✨ sᴜᴩᴩᴏʀᴛ ✨", url=config.SUPPORT_CHAT),
+        InlineKeyboardButton(text="❄ السورس ❄", url=config.SUPPORT_CHANNEL),
+        InlineKeyboardButton(text="✨ الدعم ✨", url=config.SUPPORT_CHAT),
     ],
     [
         InlineKeyboardButton(
-            text="☁️ sᴏᴜʀᴄᴇ ☁️", url="https://github.com/TheAnonymous2005/FallenMusic"
+            text="☁️ للتنصيب ☁️", url="https://t.me/ASAKIOP"
         ),
-        InlineKeyboardButton(text="🥀 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🥀", user_id=config.OWNER_ID),
+        InlineKeyboardButton(text="🥀 المطور 🥀", user_id=config.OWNER_ID),
     ],
 ]
 
@@ -94,25 +96,25 @@ gp_buttons = [
 helpmenu = [
     [
         InlineKeyboardButton(
-            text="ᴇᴠᴇʀʏᴏɴᴇ",
+            text="✯ أوامر التشغيل ✯",
             callback_data="fallen_cb help",
         )
     ],
     [
-        InlineKeyboardButton(text="sᴜᴅᴏ", callback_data="fallen_cb sudo"),
-        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", callback_data="fallen_cb owner"),
+        InlineKeyboardButton(text="✯الأدمن✯", callback_data="fallen_cb sudo"),
+        InlineKeyboardButton(text="✯المطور✯", callback_data="fallen_cb owner"),
     ],
     [
-        InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="fallen_home"),
-        InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="close"),
+        InlineKeyboardButton(text="✯رحوع✯", callback_data="fallen_home"),
+        InlineKeyboardButton(text="✯اغلاق✯", callback_data="close"),
     ],
 ]
 
 
 help_back = [
-    [InlineKeyboardButton(text="✨ sᴜᴩᴩᴏʀᴛ ✨", url=config.SUPPORT_CHAT)],
+    [InlineKeyboardButton(text="✨ السورس ✨", url=config.SUPPORT_CHANNEL)],
     [
-        InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="fallen_help"),
-        InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="close"),
+        InlineKeyboardButton(text="✯رجوع✯", callback_data="fallen_help"),
+        InlineKeyboardButton(text="✯اغلاق✯", callback_data="close"),
     ],
 ]
