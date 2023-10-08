@@ -25,6 +25,22 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 import config
 from FallenMusic import BOT_USERNAME
 
+selections = [
+    "▁▄▂▇▄▅▄▅▃",
+    "▁▃▇▂▅▇▄▅▃",
+    "▃▁▇▂▅▃▄▃▅",
+    "▃▄▂▄▇▅▃▅▁",
+    "▁▃▄▂▇▃▄▅▃",
+    "▃▁▄▂▅▃▇▃▅",
+    "▁▇▄▂▅▄▅▃▄",
+    "▁▃▅▇▂▅▄▃▇",
+    "▃▅▂▅▇▁▄▃▁",
+    "▇▅▂▅▃▄▃▁▃",
+    "▃▇▂▅▁▅▄▃▁",
+    "▅▄▇▂▅▂▄▇▁",
+    "▃▅▂▅▃▇▄▅▃",
+]
+
 close_key = InlineKeyboardMarkup(
     [[InlineKeyboardButton(text="✯ ᴄʟᴏsᴇ ✯", callback_data="close")]]
 )
@@ -32,6 +48,12 @@ close_key = InlineKeyboardMarkup(
 
 buttons = InlineKeyboardMarkup(
     [
+        [
+            InlineKeyboardButton(
+                text=f"{played} {bar} {dur}",
+                callback_data="GetTimer",
+            )
+        ],
         [
             InlineKeyboardButton(text="▷", callback_data="resume_cb"),
             InlineKeyboardButton(text="II", callback_data="pause_cb"),
