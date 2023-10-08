@@ -41,7 +41,7 @@ async def skip_str(_, message: Message):
             await _clear_(message.chat.id)
             await pytgcalls.leave_group_call(message.chat.id)
             await message.reply_text(
-                text=f"➻ تم التخطي  🥺\n│ \n└بواسطة : {message.from_user.mention} 🥀\n\n**» لا يوجد اغاني ليتم التخطي** {message.chat.title}, **ʟᴇᴀᴠɪɴɢ ᴠɪᴅᴇᴏᴄʜᴀᴛ.**",
+                text=f"➻ تم التخطي  🥺\n│ \n└بواسطة : {message.from_user.mention} 🥀\n\n**» لا يوجد اغاني ليتم التخطي** {message.chat.title}, **قائمة التشغيل فارغه.**",
                 reply_markup=close_key,
             )
         except:
@@ -72,6 +72,6 @@ async def skip_str(_, message: Message):
         img = await gen_thumb(videoid, user_id)
         return await message.reply_photo(
             photo=img,
-            caption=f"**➻ تم التشغيل  **\n\n‣ **بعنوان:** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n‣ **ᴅᴜʀᴀᴛɪᴏɴ :** `{duration}` ᴍɪɴᴜᴛᴇs\n‣ **ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ :** {req_by}",
+            caption=f"**➻ تم التشغيل  **\n\n‣ **بعنوان:** [{title[:27]}](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n‣ **المدة :** `{duration}` دقيقه\n‣ **بواسطة :** {req_by}",
             reply_markup=buttons,
         )
