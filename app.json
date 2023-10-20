@@ -55,7 +55,8 @@
         "description": "لا تــغــيــرهــــا",
         "value": "Zade",
         "required": true
-    }, 
+        } 
+      }, 
     "buildpacks": [
           {
               "url": "heroku/python"
