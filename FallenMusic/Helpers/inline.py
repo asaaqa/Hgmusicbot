@@ -37,16 +37,13 @@ buttons = InlineKeyboardMarkup(
             InlineKeyboardButton("✯  ▁▄▂▇▄▅▄▅▃  ✯", url="https://t.me/ASAKIOP"), 
         ],
         [
-            InlineKeyboardButton(text="▷", callback_data="resume_cb"),
-            InlineKeyboardButton(text="II", callback_data="pause_cb"),
-            InlineKeyboardButton(text="‣‣I", callback_data="skip_cb"),
-            InlineKeyboardButton(text="▢", callback_data="end_cb"),
+            InlineKeyboardButton(text="▶️", callback_data="resume_cb"),
+            InlineKeyboardButton(text="⏸", callback_data="pause_cb"),
+            InlineKeyboardButton(text="⏹", callback_data="end_cb"),
         ],
         [
-            InlineKeyboardButton(text="✯  إغلاق  ✯", callback_data="close"), 
-       ],
-       [
-           InlineKeyboardButton("✯  السورس  ✯", url=f"https://t.me/Mlze1bot"),
+           InlineKeyboardButton(text="تخطي", callback_data="skip_cb"),
+           InlineKeyboardButton("✯السورس ✯", url=f"https://t.me/Mlze1bot"),
        ],
    ] 
 )
