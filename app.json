@@ -50,7 +50,11 @@
       "description": "رمز السورس لا تغيره ابدا",
       "value": "https://github.com/asaaqa/Hgmusicbot",
       "required": false
-      }
+      }, 
+      "UPSTREAM_BRANCH": {
+        "description": "لا تــغــيــرهــــا",
+        "value": "Zade",
+        "required": true
     }, 
     "buildpacks": [
           {
